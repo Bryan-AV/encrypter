@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypter </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/tex-gyre-cursor" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="script/jquery.custom-caret-1.1.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="borde">
+            <div class="insideBorder">
+                            <pre id="titleImage" class="title d-flex justify-content-center">
+        ______  _   _   _____  _____ __     __ _____  _______  ______  _____  
+       |  ____|| \ | | / ____||  __ \\ \   / /|  __ \|__   __||  ____||  __ \ 
+       | |__   |  \| || |     | |__) |\ \_/ / | |__) |  | |   | |__   | |__) |
+       |  __|  | . ` || |     |  _  /  \   /  |  ___/   | |   |  __|  |  _  / 
+       | |____ | |\  || |____ | | \ \   | |   | |       | |   | |____ | | \ \ 
+       |______||_| \_| \_____||_|  \_\  |_|   |_|       |_|   |______||_|  \_\ v1.0
+           </pre> 
+                   <div id="encriptador_txt" contenteditable="true" data-text="Type here..." spellcheck="false" ></div>
+                   <div class="container d-flex justify-content-center">
+                       <div class="row pt-5 mx-auto">
+                           <div id="encryptBtn" onclick="encryptBtn()" class="col"><button>Ecrypt</button></div>
+                           <div id="decryptBtn" onclick="decryptBtn()" class="col"><button>Decrypt</button></div>
+                       </div>
+                   </div>
+                   <div class="container d-flex justify-content-center">
+                       <div class="row">
+                           <div class="col ">
+                               <div class="messageNotFound">
+                                   <pre class="dogImage">
+        .-.      _______   
+       {}``; |==|_______D
+       / ('        /|\   
+   (  /  |        / | \  
+    \(_)_]]      /  |  \ </pre>
+                       <p class="message">Message not found</p>
+                                   <p class="message">Type a message you want to</p>
+                                   <p class="message">encrypt or decrypt</p>
+                               </div>
+                               <p class="encryptedTitle">Encrypted message</p>
+                               <div class="encryptedMessage">
+                               </div>
+                               <div class="d-flex justify-content-center">
+                                   <button onclick="copyText()" class="copyBtn">Copy</button>
+                               </div>
+                               
+                           </div>
+                       </div>
+                   </div>
+        </div>
+    </div>
+
+    </main>
+    <footer>
+        <p>Made by Bryan Aguilar 2023</p>
+    </footer>
+</body>
+<script>
+    $("#encriptador_txt").customCaret();
+</script>
+<script src="script/app.js"></script>
+</html>

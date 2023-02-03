@@ -1,0 +1,162 @@
+
+:root {  --green: #86af80;
+    --background: #1c1c1c;
+    /* --text: #839496; */
+    --text: #86af80;
+   }
+
+   
+   body {
+     background-color: var(--background);
+     color: var(--text);
+     font-family: monospace;
+     font-size: 18px;
+     
+   }
+
+   main {
+   padding: 8px;
+    
+   }
+
+   .borde{
+    padding: .5rem;
+    border: 2px solid #ddccbb;
+    border-radius: 3px;
+    height: 100%;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    display:block;
+    padding: .5rem; 
+   }
+   
+   .insideBorder{
+    height:90vh;
+    overflow-y: auto;
+    /* overflow: hidden; */
+   }
+ 
+  
+   #caret {
+     border-right: 0.5em solid var(--text);
+     margin-right: -0.5em;
+     animation: blink-animation 1s steps(2, start) infinite;
+   }
+    @keyframes 
+   blink-animation {  to {
+    visibility: hidden;
+   }
+   }
+   
+   #encriptador_txt {
+     border: 6px solid var(--green);
+     outline: none;
+     margin: 20px;
+     padding: 10px;
+     color: transparent;
+     text-shadow: 0 0 var(--text);
+     width: 50%;
+     height: 200px;
+     margin: auto;
+   }
+   
+
+
+
+.title{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #e8ae5b;
+    /* line-height: 1.15; */
+}
+
+
+
+button{
+  width: 200px;
+  height: 50px;
+  background-color: #ddccbb;
+  border-style: none;
+}
+
+.dogImage{
+  padding-top: 20px;
+  color: #e8ae5b;
+  line-height: 1.15;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-text)
+}
+
+.message{
+  text-align: center;
+}
+
+.encryptedTitle {
+  padding-top: 40px;
+  margin: 0;
+  text-align: center;
+  color: #ddccbb;
+  display: none;
+}
+
+.copyBtn{
+margin-bottom: 20px;
+}
+
+.encryptedMessage{
+  padding-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+  max-width : 300px;
+  word-wrap: break-word;
+}
+
+footer{
+  padding-top: 10px;
+  color: #ddccbb;
+  text-align: center;
+}
+
+#titleImage {
+  /* white-space: pre-wrap; */
+       
+        
+        overflow: hidden;
+       
+        animation: typing 1s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+
+  #titleImage {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+
+  #titleImage {
+    font-size: 34%;
+  }
+
+  #encriptador_txt{
+    width: 100%;
+  }
+
+ #encryptBtn, #decryptBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+}
